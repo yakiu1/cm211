@@ -5,162 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>
-                °ê¥ß«ÌªF¬ì§Ş¤j¾Ç¤pÃã¨å
+                åœ‹ç«‹å±æ±ç§‘æŠ€å¤§å­¸å°è¾­å…¸
 		</title>
-		<!-- ³Ì·s½sÄ¶©M³Ì¨Î¤Æªº CSS -->
+		<!-- æœ€æ–°ç·¨è­¯å’Œæœ€ä½³åŒ–çš„ CSS -->
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
-		<!-- ¿ï¾Ü©Ê§G´º¥DÃD -->
+		<!-- é¸æ“‡æ€§ä½ˆæ™¯ä¸»é¡Œ -->
 		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
-		<!-- ³Ì·s½sÄ¶©M³Ì¨Î¤Æªº JavaScript -->
+		<!-- æœ€æ–°ç·¨è­¯å’Œæœ€ä½³åŒ–çš„ JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$('#exampleModal').on('show.bs.modal', function (event) {
+  			var button = $(event.relatedTarget) // Button that triggered the modal
+  			var recipient = button.data('whatever') // Extract info from data-* attributes
+  			// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  			// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  			var modal = $(this)
+  			modal.find('.modal-title').text('New message to ' + recipient)
+  			modal.find('.modal-body input').val(recipient)
+		})</script>
 	</head>
 	<body>
 		<div class="page-header" style="padding:2px">
             <center><a href="http://mportal.npust.edu.tw/bin/home.php"><img  src="../img/npust.jpg"></a></center>
-			<center><h1 style="font-family:·L³n¥¿¶ÂÅé">«Ì¬ì¤j¤pÃã¨å<small style="font-family:·L³n¥¿¶ÂÅé">--¤j®a¤@¦P§¹¦¨§a!!</small></h1></center>
+			<center><h1 style="font-family:å¾®è»Ÿæ­£é»‘é«”">å±ç§‘å¤§å°è¾­å…¸<small style="font-family:å¾®è»Ÿæ­£é»‘é«”">--å¤§å®¶ä¸€åŒå®Œæˆå§!!</small></h1></center>
 		</div>
 		<div class="row" style="margin-bottom:20px">
 			<div class="col-md-2">
-				<a href="#" class="btn btn-primary btn-lg btn-block" role="button">­º­¶</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">®Õ¥v»Pªu­²</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">®Õ¶é¦ì¸m</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">¦a²z¯S¦â</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">®Õ´º»P«Ø¿v</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">¬ãµo¤¤¤ß</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">¬ã¨s¤¤¤ß</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">¾ú¥ô®Õªø</a>
-				<a href="#" class="btn btn-default btn-lg btn-block" role="button">±Ğ¾Ç³æ¦ì</a>
+			<a href="home.html" class="btn btn-default btn-lg btn-block" role="button">é¦–é </a>
+			<a href="history.html" class="btn btn-primary btn-lg btn-block" role="button">æ ¡å²èˆ‡æ²¿é©</a>
+			<a href="npust-map.html" class="btn btn-default btn-lg btn-block" role="button">æ ¡åœ’ä½ç½®</a>
+			<a href="geography.html" class="btn btn-default btn-lg btn-block" role="button">åœ°ç†ç‰¹è‰²</a>
+			<a href="Landscape and architecture school.html" class="btn btn-default btn-lg btn-block" role="button">æ ¡æ™¯èˆ‡å»ºç¯‰</a>
+			<a href="ç ”ç™¼ä¸­å¿ƒ.html" class="btn btn-default btn-lg btn-block" role="button">ç ”ç™¼ä¸­å¿ƒ</a>
+			<a href="../webs/ç ”ç©¶ä¸­å¿ƒ/andia-agency-v2-1/index.html" class="btn btn-default btn-lg btn-block" role="button">ç ”ç©¶ä¸­å¿ƒ</a>
+			<a href="Presidents.html" class="btn btn-default btn-lg btn-block" role="button">æ­·ä»»æ ¡é•·</a>
+			<a href="teachunit.html" class="btn btn-default btn-lg btn-block" role="button">æ•™å­¸å–®ä½</a>
 			</div>
 			<div class="col-md-10">
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<img width="300" height="300" src="https://c2.staticflickr.com/8/7322/8775678941_3efab4ed10_b.jpg" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">«Ì¬ì®Õªù¤f</div>
+							<div class="alert alert-success btn-block" role="alert">å±ç§‘æ ¡é–€å£</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<img width="300" height="300"  src="http://static.panoramio.com/photos/large/19622640.jpg" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">«Ì¬ì¦æ¬F¤¤¤ß</div>
+							<div class="alert alert-success btn-block" role="alert">å±ç§‘è¡Œæ”¿ä¸­å¿ƒ</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<img width="300" height="300"  src="http://static.panoramio.com/photos/original/50020160.jpg" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">«Ì¬ì¬¡°Ê¤¤¤ß</div>
+							<div class="alert alert-success btn-block" role="alert">å±ç§‘æ´»å‹•ä¸­å¿ƒ</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<img width="300" height="300"  src="http://pic.pimg.tw/zoe760402/1180870838_n.jpg" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">«Ì¬ì¹Ï®ÑÀ]</div>
+							<div class="alert alert-success btn-block" role="alert">å±ç§‘åœ–æ›¸é¤¨</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<img width="300" height="300"  src="http://blog.xuite.net/tlp.88726/100EMBA/62341925/cover600.jpg?d=600.png" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">«Ì¬ìºŞ²z¤j¼Ó</div>
+							<div class="alert alert-success btn-block" role="alert">å±ç§‘ç®¡ç†å¤§æ¨“</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<img width="300" height="300"  src="../img/pool.jpg" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">«Ì¬ì´åªa¦À</div>
+							<div class="alert alert-success btn-block" role="alert">å±ç§‘æ¸¸æ³³æ± </div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
-							<img width="300" height="300"  src="http://pic.pimg.tw/rnase/49fae0e5dd762.jpg" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-info btn-block" role="alert">«Ì¬ì©s²»Åé¨|À]</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
-							<img width="300" height="300"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/NPUST_Gates.JPG/220px-NPUST_Gates.JPG" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-info btn-block" role="alert">¤@¦P§¹¦¨</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
-							<img width="300" height="300"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/NPUST_Gates.JPG/220px-NPUST_Gates.JPG" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-info btn-block" role="alert">±M®×</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
-							<img width="300" height="300"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/NPUST_Gates.JPG/220px-NPUST_Gates.JPG" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-danger btn-block" role="alert">ª`·N!</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
-							<img width="300" height="300"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/NPUST_Gates.JPG/220px-NPUST_Gates.JPG" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-danger btn-block" role="alert">µ{¦¡½X</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
-							<img width="300" height="300"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/NPUST_Gates.JPG/220px-NPUST_Gates.JPG" alt="..." class="img-rounded img-responsive">
-						</div>
-						<div class="col-md-12">
-							<div class="alert alert-danger btn-block" role="alert">½Ğ±Æª©!</div>
-						</div>
-					</div>
-				</div>
+				<p>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">å±ç§‘æ ¡é–€å£</button>
+         	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+         	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@twbootstrap">Open modal for @twbootstrap</button>
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        						<h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      					</div>
+      					<div class="modal-body">
+        						<form role="form">
+          							<div class="form-group">
+            							<label for="recipient-name" class="control-label">Recipient:</label>
+            							<input type="text" class="form-control" id="recipient-name">
+          							</div>
+          							<div class="form-group">
+            							<label for="message-text" class="control-label">Message:</label>
+            							<textarea class="form-control" id="message-text"></textarea>
+          							</div>
+        						</form>
+      					</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        								<button type="button" class="btn btn-primary">Send message</button>
+      								</div>
+    				</div>
+  				</div>
 			</div>
 		</div>
+	</div>
 
 	</body>
-	<!-- jQuery (Bootstrap ©Ò¦³¥~±¾§¡»İ­n¨Ï¥Î) -->
+	<!-- jQuery (Bootstrap æ‰€æœ‰å¤–æ›å‡éœ€è¦ä½¿ç”¨) -->
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
    
-	<!-- ¨Ì»İ­n°Ñ¦Ò¤w½sÄ¶¥~±¾ª©¥»¡]¦p¤U¡^¡A©Î¦U¦Û¿W¥ßªº¥~±¾ª©¥» -->
+	<!-- ä¾éœ€è¦åƒè€ƒå·²ç·¨è­¯å¤–æ›ç‰ˆæœ¬ï¼ˆå¦‚ä¸‹ï¼‰ï¼Œæˆ–å„è‡ªç¨ç«‹çš„å¤–æ›ç‰ˆæœ¬ -->
     
 	<script src="js/bootstrap.min.js"></script>
  
