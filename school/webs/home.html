@@ -13,16 +13,95 @@
 		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 		<!-- 最新編譯和最佳化的 JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			$('#exampleModal').on('show.bs.modal', function (event) {
-  			var button = $(event.relatedTarget) // Button that triggered the modal
-  			var recipient = button.data('whatever') // Extract info from data-* attributes
-  			// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  			// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  			var modal = $(this)
-  			modal.find('.modal-title').text('New message to ' + recipient)
-  			modal.find('.modal-body input').val(recipient)
-		})</script>
+		<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html {
+  border-top: 5px solid #fff;
+  background: #FFFFFF;
+  color: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+		</style>
+		
 	</head>
 	<body>
 		<div class="page-header" style="padding:2px">
@@ -31,12 +110,12 @@
 		</div>
 		<div class="row" style="margin-bottom:20px">
 			<div class="col-md-2">
-			<a href="home.html" class="btn btn-default btn-lg btn-block" role="button">首頁</a>
-			<a href="history.html" class="btn btn-primary btn-lg btn-block" role="button">校史與沿革</a>
+			<a href="home.html" class="btn btn-primary btn-lg btn-block" role="button">首頁</a>
+			<a href="history.html" class="btn btn-default btn-lg btn-block" role="button">校史與沿革</a>
 			<a href="npust-map.html" class="btn btn-default btn-lg btn-block" role="button">校園位置</a>
 			<a href="geography.html" class="btn btn-default btn-lg btn-block" role="button">地理特色</a>
 			<a href="Landscape and architecture school.html" class="btn btn-default btn-lg btn-block" role="button">校景與建築</a>
-			<a href="#" class="btn btn-default btn-lg btn-block" role="button">研發中心</a>
+			<a href="研發中心.html" class="btn btn-default btn-lg btn-block" role="button">研發中心</a>
 			<a href="../webs/研究中心/andia-agency-v2-1/index.html" class="btn btn-default btn-lg btn-block" role="button">研究中心</a>
 			<a href="Presidents.html" class="btn btn-default btn-lg btn-block" role="button">歷任校長</a>
 			<a href="teachunit.html" class="btn btn-default btn-lg btn-block" role="button">教學單位</a>
@@ -45,76 +124,71 @@
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">屏科校門口</div>
+							<a href="../img/port.jpg"  class="alert-link"><div class="alert alert-success btn-block" role="alert">屏科校門口</div></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">屏科行政中心</div>
+							<a href="../img/center.jpg" class="alert-link"><div class="alert alert-success btn-block" role="alert">屏科行政中心</div></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">屏科活動中心</div>
+							<a href="../img/activity.jpg" class="alert-link"><div class="alert alert-success btn-block" role="alert">屏科活動中心</div></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">屏科圖書館</div>
+							<a href="../img/lib.jpg" class="alert-link"><div class="alert alert-success btn-block" role="alert">屏科圖書館</div></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">屏科管理大樓</div>
+							<a href="../img/mis.jpg" class="alert-link"><div class="alert alert-success btn-block" role="alert">屏科管理大樓</div></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="alert alert-success btn-block" role="alert">屏科游泳池</div>
+							<a href="../img/pool.jpg" class="alert-link"><div class="alert alert-success btn-block" role="alert">屏科游泳池</div></a>
 						</div>
 					</div>
 				</div>
 				<p>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">屏科校門口</button>
-         	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-         	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@twbootstrap">Open modal for @twbootstrap</button>
-			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  				<div class="modal-dialog">
-    				<div class="modal-content">
-      					<div class="modal-header">
-        						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        						<h4 class="modal-title" id="exampleModalLabel">New message</h4>
-      					</div>
-      					<div class="modal-body">
-        						<form role="form">
-          							<div class="form-group">
-            							<label for="recipient-name" class="control-label">Recipient:</label>
-            							<input type="text" class="form-control" id="recipient-name">
-          							</div>
-          							<div class="form-group">
-            							<label for="message-text" class="control-label">Message:</label>
-            							<textarea class="form-control" id="message-text"></textarea>
-          							</div>
-        						</form>
-      					</div>
-      								<div class="modal-footer">
-        								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        								<button type="button" class="btn btn-primary">Send message</button>
-      								</div>
-    				</div>
-  				</div>
-			</div>
-		</div>
+				<h1>Incredibly Basic Slider</h1>
+				<table>
+				<tr>
+<td><div id="slider">
+  <a href="#" class="control_next">></a>
+  <a href="#" class="control_prev"><</a>
+  <ul>
+    <li><img src="../img/but1.jpg" width="500px" height="300px"></li>
+    <li><img src="../img/but2.jpg" width="500px" height="300px"></li>
+    <li><img src="../img/but3.jpg" width="500px" height="300px"></li>
+    <li><img src="../img/but4.jpg" width="500px" height="300px"></li>
+    <li><img src="../img/but5.jpg" width="500px" height="300px"></li>
+    <li><img src="../img/but6.jpg" width="500px" height="300px"></li>
+  </ul>  
+</div>
+
+<div class="slider_option">
+  <input type="checkbox" id="checkbox" checked="true">
+  <label for="checkbox">自動播放</label>
+</div>
+</td>
+<td><p><center>有影片可連結</center><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.youtube.com/watch?v=cXFA1WFRBvw"><img src="../img/time.jpg" width="500px" height="300px"></a></td>
+</tr>
+</table>
+		    </div>
 	</div>
 
 	</body>
@@ -126,5 +200,53 @@
 	<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
     
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+</script>
  
 </html>
